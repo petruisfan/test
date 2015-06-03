@@ -1,11 +1,3 @@
-#!/usr/local/bin/node
-
-var express = require('express');
-
-var app = express();
-
-
-app.configure(function () {
     app.set('port', process.env.PORT || 3000);
     app.use(express.bodyParser())
 });
